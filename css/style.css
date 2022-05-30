@@ -71,6 +71,16 @@ header label:hover {
     color: white;
     padding: 20px;
     margin: auto;
+    transition: all 1s;
+}
+
+.entrada:hover {
+    width: 90%;
+    height: auto;
+    background-color: rgb(116, 12, 12);
+    color: white;
+    border: 5px solid black;
+    padding: 10px;
 }
 
 .grid-container {
