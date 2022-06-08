@@ -1,0 +1,55 @@
+/* Responsive: acomoda imagen, texto y hace aparecer menú desplegable */
+
+@media (max-width: 768px) {
+    header label {
+        display: block;
+    }
+
+    .menu {
+        position: absolute;
+        background: black;
+        width: 70%;
+        margin-left: -70%;
+        transition: all 0.5s;
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .menu li {
+        border-top: 1px solid white;
+    }
+
+    #checkbox:checked ~ .menu {
+        margin: 0;
+    }
+
+    .principal img {
+       width: 100%;
+   }
+
+   .entrada {
+       width: 100%;
+   }
+
+   .grid-container {
+       display: grid;
+       grid-template-areas: "vader"
+       "desVader"
+       "almirantes"
+       "desAlmirantes" 
+       "stormtroopers"
+       "desStormtroopers"
+       "tercerosAfiliados"
+       "desTerceros" ;
+       grid-template-rows: auto;
+       grid-template-columns: auto;
+       grid-row-gap: 1px;
+       grid-column-gap: 1px;
+   }
+
+   .contact {
+       width: 90%;
+   }
+}

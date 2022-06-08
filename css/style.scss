@@ -55,11 +55,10 @@ header label:hover {
 
 .principal{
     text-align: center;
+    img {
+        width: 80%;
+        height: auto;
    }
-
-   .principal img {
-    width: 80%;
-    height: auto;
 }
 
 
@@ -93,22 +92,20 @@ header label:hover {
     grid-template-columns: auto;
     grid-row-gap: 1px;
     grid-column-gap: 1px;
-}
-
-.grid-container div{
-    background: black;
-    color: white;
-    border-radius: 1px;
-    padding: 20px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.grid-container img {
-    width: 80%;
-    height: auto;
+    div{
+        background: black;
+        color: white;
+        border-radius: 1px;
+        padding: 20px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    img {
+        width: 80%;
+        height: auto;
+    }
 }
 
 .vader {
@@ -159,8 +156,8 @@ header label:hover {
     margin: 40px auto;
     padding: 15px 30px;
     border: 1px solid black;
-    width: 40%;
-    height: 20%;
+    width: 80%;
+    height: 40%;
     font-size: 20px;
 }
 
@@ -173,54 +170,4 @@ header label:hover {
     height: auto;
 }
 
-/* Responsive: acomoda imagen, texto y hace aparecer menú desplegable */
-
-@media (max-width: 768px) {
-     header label {
-         display: block;
-     }
-
-     .menu {
-         position: absolute;
-         background: black;
-         width: 70%;
-         margin-left: -70%;
-         transition: all 0.5s;
-     }
-
-     .menu ul {
-         flex-direction: column;
-     }
-
-     .menu li {
-         border-top: 1px solid white;
-     }
-
-     #checkbox:checked ~ .menu {
-         margin: 0;
-     }
-
-     .principal img {
-        width: 100%;
-    }
-
-    .entrada {
-        width: 100%;
-    }
-
-    .grid-container {
-        display: grid;
-        grid-template-areas: "vader"
-        "desVader"
-        "almirantes"
-        "desAlmirantes" 
-        "stormtroopers"
-        "desStormtroopers"
-        "tercerosAfiliados"
-        "desTerceros" ;
-        grid-template-rows: auto;
-        grid-template-columns: auto;
-        grid-row-gap: 1px;
-        grid-column-gap: 1px;
-    }
- }
+@import "responsive";
