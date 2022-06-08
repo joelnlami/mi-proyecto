@@ -1,242 +1,221 @@
 @charset "UTF-8";
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
 }
 
 header {
-  width: 100%;
-  background: black;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  z-index: 999;
+    width: 100%;
+    background: black;
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 
 #checkbox {
-  display: none;
+    display: none;
 }
 
 header label {
-  display: none;
-  width: 30px;
-  height: 30px;
-  padding: 0px;
-  border-right: 1px solid white;
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+    border-right: 1px solid white;
 }
 
 header label:hover {
-  cursor: pointer;
-  background: #ac1a1a;
+    cursor: pointer;
+    background: #ac1a1a;
 }
 
 .menu ul {
-  margin: 0;
-  list-style: none;
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
 }
 
 .menu li {
-  border-right: 1px solid white;
+    border-right: 1px solid white;
 }
 
 .menu li:hover {
-  background: #ac1a1a;
+    background: #ac1a1a;
 }
 
 .menu li a {
-  display: block;
-  padding: 15px 20px;
-  color: red;
-  text-decoration: none;
+    display: block;
+    padding: 15px 20px;
+    color: red;
+    text-decoration: none;
 }
 
 .principal {
-  text-align: center;
+    text-align: center;
 }
 
 .principal img {
-  width: 80%;
-  height: auto;
+    width: 80%;
+    height: auto;
 }
 
 .entrada {
-  width: 80%;
-  height: auto;
-  background-color: #c52121;
-  border: 10px solid black;
-  color: white;
-  padding: 20px;
-  margin: auto;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+    width: 80%;
+    height: auto;
+    background-color: #c52121;
+    border: 10px solid black;
+    color: white;
+    padding: 20px;
+    margin: auto;
+    transition: all 1s;
 }
 
 .entrada:hover {
-  width: 90%;
-  height: auto;
-  background-color: #740c0c;
-  color: white;
-  border: 5px solid black;
-  padding: 10px;
+    width: 90%;
+    height: auto;
+    background-color: #740c0c;
+    color: white;
+    border: 5px solid black;
+    padding: 10px;
 }
 
 .grid-container {
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "vader desVader"
+    display: grid;
+    grid-template-areas: "vader desVader"
  "desAlmirantes almirantes"
  "stormtroopers desStormtroopers"
  "desTerceros tercerosAfiliados";
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
-  -ms-grid-columns: auto;
-      grid-template-columns: auto;
-  grid-row-gap: 1px;
-  grid-column-gap: 1px;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-row-gap: 1px;
+    grid-column-gap: 1px;
 }
 
 .grid-container div {
-  background: black;
-  color: white;
-  border-radius: 1px;
-  padding: 20px;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+    background: black;
+    color: white;
+    border-radius: 1px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .grid-container img {
-  width: 80%;
-  height: auto;
+    width: 80%;
+    height: auto;
 }
 
 .vader {
-  grid-area: vader;
+    grid-area: vader;
 }
 
 .desVader {
-  grid-area: desVader;
+    grid-area: desVader;
 }
 
 .almirantes {
-  grid-area: almirantes;
+    grid-area: almirantes;
 }
 
 .desAlmirantes {
-  grid-area: desAlmirantes;
+    grid-area: desAlmirantes;
 }
 
 .stormtroopers {
-  grid-area: stormtroopers;
+    grid-area: stormtroopers;
 }
 
 .desStormtroopers {
-  grid-area: desStormtroopers;
+    grid-area: desStormtroopers;
 }
 
 .desTerceros {
-  grid-area: desTerceros;
+    grid-area: desTerceros;
 }
 
 .tercerosAfiliados {
-  grid-area: tercerosAfiliados;
+    grid-area: tercerosAfiliados;
 }
 
 .descripciones {
-  width: 70%;
-  height: 15%;
-  background-color: #c52121;
-  border: 10px solid black;
-  padding: 20px 30px;
-  margin: 50px auto;
-  overflow: hidden;
-  font-family: sans-serif;
+    width: 70%;
+    height: 15%;
+    background-color: #c52121;
+    border: 10px solid black;
+    padding: 20px 30px;
+    margin: 50px auto;
+    overflow: hidden;
+    font-family: sans-serif;
 }
 
 .contact {
-  text-align: center;
-  margin: 40px auto;
-  padding: 15px 30px;
-  border: 1px solid black;
-  width: 80%;
-  height: 40%;
-  font-size: 20px;
+    text-align: center;
+    margin: 40px auto;
+    padding: 15px 30px;
+    border: 1px solid black;
+    width: 80%;
+    height: 40%;
+    font-size: 20px;
 }
 
 #footer {
-  background-color: black;
-  color: white;
-  text-align: center;
-  font-family: sans-serif;
-  width: 100%;
-  height: auto;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    width: 100%;
+    height: auto;
 }
 
 /* Responsive: acomoda imagen, texto y hace aparecer menú desplegable */
 @media (max-width: 768px) {
-  header label {
-    display: block;
+    header label {
+        display: block;
   }
-  .menu {
-    position: absolute;
-    background: black;
-    width: 70%;
-    margin-left: -70%;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
+    .menu {
+        position: absolute;
+        background: black;
+        width: 70%;
+        margin-left: -70%;
+        transition: all 0.5s;
   }
-  .menu ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    .menu ul {
+        flex-direction: column;
   }
-  .menu li {
-    border-top: 1px solid white;
+    .menu li {
+        border-top: 1px solid white;
   }
-  #checkbox:checked ~ .menu {
-    margin: 0;
+    #checkbox:checked ~ .menu {
+        margin: 0;
   }
-  .principal img {
-    width: 100%;
+    .principal img {
+        width: 100%;
   }
-  .entrada {
-    width: 100%;
+    .entrada {
+        width: 100%;
   }
-  .grid-container {
-    display: -ms-grid;
-    display: grid;
+    .grid-container {
+        display: grid;
         grid-template-areas: "vader"
- "desVader"
- "almirantes"
- "desAlmirantes" 
- "stormtroopers"
- "desStormtroopers"
- "tercerosAfiliados"
- "desTerceros";
-    -ms-grid-rows: auto;
+        "desVader"
+        "almirantes"
+        "desAlmirantes" 
+        "stormtroopers"
+        "desStormtroopers"
+        "tercerosAfiliados"
+        "desTerceros";
         grid-template-rows: auto;
-    -ms-grid-columns: auto;
         grid-template-columns: auto;
-    grid-row-gap: 1px;
-    grid-column-gap: 1px;
+        grid-row-gap: 1px;
+        grid-column-gap: 1px;
   }
-  .contact {
-    width: 90%;
+    .contact {
+        width: 90%;
   }
 }
 /*# sourceMappingURL=style.css.map */
