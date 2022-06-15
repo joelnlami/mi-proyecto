@@ -67,10 +67,14 @@ header label:hover {
     height: auto;
     background-color: rgb(197, 33, 33);
     border: 10px solid black;
-    color: white;
     padding: 20px;
     margin: auto;
     transition: all 1s;
+}
+
+.entrada--blanco {
+    @extend .entrada;
+    color: white;
 }
 
 .entrada:hover {
@@ -161,13 +165,17 @@ header label:hover {
     font-size: 20px;
 }
 
-#footer {
-    background-color: black;
-    color: white;
+@mixin footer ($col, $bg) {
+    color: $col;
+    background-color: $bg;
     text-align: center;
     font-family: sans-serif;
     width: 100%;
     height: auto;
+}
+
+#footer {
+    @include footer (white, black)
 }
 
 @import "responsive";
