@@ -165,17 +165,13 @@ header label:hover {
     font-size: 20px;
 }
 
-@mixin footer ($col, $bg) {
-    color: $col;
-    background-color: $bg;
+#footer {
+    color: white;
+    background-color: black;
     text-align: center;
     font-family: sans-serif;
     width: 100%;
     height: auto;
-}
-
-#footer {
-    @include footer (white, black)
 }
 
 @import "responsive";
